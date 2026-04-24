@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --g900: #052e16;
+  --g800: #14532d;
+  --g700: #166534;
+  --g600: #15803d;
+  --g500: #16a34a;
+  --g400: #22c55e;
+  --g300: #4ade80;
+  --g200: #bbf7d0;
+  --g100: #dcfce7;
+  --g50:  #f0fdf4;
+  --lime: #a3e635;
+  --emerald: #10b981;
+  --text: #111827;
+  --text2: #374151;
+  --text3: #6b7280;
+  --border: #e5e7eb;
+  --surface: #f9fafb;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--surface);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+a { text-decoration: none; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--g50); }
+::-webkit-scrollbar-thumb { background: var(--g400); border-radius: 3px; }
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); border: 0;
+}
